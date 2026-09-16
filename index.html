@@ -291,7 +291,7 @@
     --line:rgba(12,12,12,.12);--hero:#0b0b0b;--accent:#111;--accent-soft:#e7e7e4;
     --radius:20px;--radius-sm:12px;--shadow:0 18px 55px rgba(0,0,0,.08);
     /* FITNESS_WORKBENCH_BACKGROUND_CONFIG_START */
-    --workbench-background-image:url("工作台与工具/健身工作台开发/界面素材/wallpaper-light.webp");
+    --workbench-background-image:url("工作台与工具/健身工作台开发/界面素材/workbench-background.png");
     --workbench-background-desktop-position:60% center;
     --workbench-background-mobile-position:66% center;
     --workbench-hero-desktop-position:60% center;
@@ -2205,22 +2205,9 @@ body.dark-background-theme #m-nutrition .nutrition-back,body.dark-background-the
 @media(max-width:899px){#navBar a{min-width:0;font-size:11px;letter-spacing:0}.quick-destinations{display:none}.nutrition-mobile-nav{bottom:65px!important}}
 </style>
 
-<style>
-/* [本地补丁 C] 浅色主题：封面/导航/背景改为浅色，保证文字清晰可读 */
-.hero{color:#17181a !important;background:linear-gradient(135deg,#fcfdfd 0%,#eef1f5 100%) !important;box-shadow:0 16px 40px rgba(20,24,30,.07) !important}
-.hero .hi{color:#17181a !important}
-.hero .sub{color:rgba(23,24,26,.68) !important}
-.hero .pill{border-color:rgba(23,24,26,.16) !important;color:rgba(23,24,26,.85) !important}
-.hero:before{color:rgba(23,24,26,.07) !important}
-.hero:after{border-color:rgba(23,24,26,.10) !important}
-body{background-image:linear-gradient(rgba(255,255,255,.92),rgba(255,255,255,.92)),var(--workbench-background-image) !important;background-attachment:fixed !important}
-body::after{display:none !important}
-.nav,.nav *{background-image:none !important}
-.nav{background:rgba(255,255,255,.92) !important;border-bottom:1px solid rgba(23,24,26,.08) !important}
-.nav a,.nav a *{color:#17181a !important}
-</style>
+
 </head>
-<body>
+<body class="dark-background-theme">
 
 <video id="workbenchBgVideo" class="workbench-video" data-background-mode="video" muted loop playsinline preload="none" poster="工作台与工具/健身工作台开发/界面素材/workbench-background.png" aria-hidden="true">
   <source id="workbenchVideoSource" data-src="" type="video/mp4">
